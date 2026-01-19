@@ -356,7 +356,7 @@ export default function App() {
               <h3>Email Me</h3>
               <p className="muted">Shoot me an email, I’ll get back to you asap.</p>
               <a className="contactBox" href={LINKS.email}>
-                charishmapolineni13@gmail.com
+                charishmapolineni2001@gmail.com
               </a>
             </div>
 
