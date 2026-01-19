@@ -4,7 +4,7 @@ import "./styles.css";
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/charishma-polineni",
   github: "https://github.com/CharishmaPoline",
-  email: "mailto:charishmapolineni13@gmail.com",
+  email: "mailto:charishmapolineni2001@gmail.com",
 
   // ✅ Put your resume pdf inside /public with this exact name
   resume: "/Charishma_Polineni_Resume.pdf",
