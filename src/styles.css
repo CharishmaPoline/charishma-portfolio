@@ -1,0 +1,320 @@
+/* =========================
+   GLOBAL
+========================= */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  /* ✅ NEW BACKGROUND (modern gradient) */
+  background: radial-gradient(circle at top, #0b1a3a 0%, #050814 55%, #02040a 100%);
+
+  color: #f5f7ff;
+}
+
+.page { min-height: 100vh; }
+
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 18px 60px;
+}
+
+.muted{
+  color: rgba(255,255,255,0.72);
+  line-height: 1.55;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7, 10, 18, 0.65);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.navInner{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand{
+  font-weight: 800;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navLinks{
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.navLinks a{
+  color: rgba(255,255,255,0.78);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.navLinks a:hover{
+  color: #fff;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn{
+  display: inline-block;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.btn:hover{ transform: translateY(-2px); }
+
+.btnPrimary{
+  background: #2a63ff;
+  color: #fff;
+  border-color: rgba(42,99,255,0.8);
+}
+
+.btnSecondary{
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+
+/* =========================
+   CARD
+========================= */
+.card{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   HERO TOP (PHOTO CENTER)
+========================= */
+.heroTop{
+  padding: 34px 0 22px;
+  text-align: center;
+}
+
+.heroPhotoWrap{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.profileImgHero{
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* ✅ face center fix (adjust later if needed) */
+  object-position: 50% 25%;
+
+  border: 4px solid rgba(255,255,255,0.14);
+  box-shadow: 0 16px 45px rgba(0,0,0,0.45);
+  background: rgba(255,255,255,0.06);
+  display: block;
+}
+
+.heroTitle{
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.1;
+}
+
+.heroSubtitle{
+  margin: 10px auto 0;
+  max-width: 860px;
+  color: rgba(255,255,255,0.78);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.centerBtns{
+  justify-content: center;
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   CHIPS
+========================= */
+.chip{
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section{
+  padding: 34px 0 10px;
+}
+
+.sectionHead h2{
+  font-size: 34px;
+  margin: 0;
+}
+
+.sectionHead p{
+  margin: 6px 0 0;
+}
+
+/* =========================
+   GRIDS
+========================= */
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.skillGrid{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.projectGrid{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.chipWrap{
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bullets{
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,0.76);
+}
+
+.cardBtns{
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   CONTACT (3 cards like your screenshot)
+========================= */
+.contactGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.contactCard{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  padding: 28px;
+  min-height: 210px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+.contactCard h3{
+  margin: 0;
+  font-size: 22px;
+}
+
+.contactBox{
+  margin-top: 22px;
+  display: block;
+  width: 100%;
+  background: rgba(255,255,255,0.92);
+  color: #111;
+  padding: 14px 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.contactBox:hover{ transform: translateY(-2px); }
+
+.socialRow{
+  margin-top: 22px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.socialIcon{
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.socialIcon:hover{
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.14);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer{
+  margin-top: 40px;
+  text-align: center;
+  padding: 18px 0 30px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1050px){
+  .skillGrid{ grid-template-columns: repeat(2, 1fr); }
+  .projectGrid{ grid-template-columns: 1fr; }
+  .grid2{ grid-template-columns: 1fr; }
+  .contactGrid{ grid-template-columns: 1fr; }
+  .heroTitle{ font-size: 38px; }
+}
