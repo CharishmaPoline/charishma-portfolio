@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 const LINKS = {
-  linkedin: "www.linkedin.com/in/charishma-polineni-821824222",
+  linkedin: "https://www.linkedin.com/in/charishma-polineni-821824222/",
   github: "https://github.com/CharishmaPoline",
   email: "mailto:charishmapolineni2001@gmail.com",
 
