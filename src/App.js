@@ -2,12 +2,12 @@ import React from "react";
 import "./styles.css";
 
 const LINKS = {
-  linkedin: "https://www.linkedin.com/in/charishma-polineni",
+  linkedin: "www.linkedin.com/in/charishma-polineni-821824222",
   github: "https://github.com/CharishmaPoline",
   email: "mailto:charishmapolineni2001@gmail.com",
 
   // ✅ Put your resume pdf inside /public with this exact name
-  resume: "/Charishma_Polineni_Resume.pdf",
+  resume: "/Charishma_Ressume_polineni.pdf",
 
   // ✅ Resume Parser AI links
   liveResumeParser: "https://resume-parser-ai-9bfwgpuon2yextjvwznikw.streamlit.app/",
