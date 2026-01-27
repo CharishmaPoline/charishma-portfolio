@@ -7,9 +7,8 @@ const LINKS = {
   email: "mailto:charishmapolineni2001@gmail.com",
 
   // ✅ Put your resume pdf inside /public with this exact name
-  resume: "/Charishma_Ressume_polineni.pdf",
+  resume: "/charishma_Resume_Polineni.pdf",
 
-  // ✅ Resume Parser AI links
   liveResumeParser: "https://resume-parser-ai-9bfwgpuon2yextjvwznikw.streamlit.app/",
   githubResumeParser: "https://github.com/CharishmaPoline/Resume-Parser-AI",
 
