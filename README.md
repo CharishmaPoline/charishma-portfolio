@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+I built a personal portfolio website using React to showcase my skills, projects, experience, certifications, and contact information in a clean and professional way.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The portfolio highlights:
 
-## Available Scripts
+AI/ML projects like Resume Parser AI with Job Description matching
 
-In the project directory, you can run:
+Web application project (Sumarishma – Lifestyle React App)
 
-### `npm start`
+Data & analytics projects using SQL and Excel dashboards
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Certifications with clickable verification links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Downloadable resume, LinkedIn, GitHub, and email integration
 
-### `npm test`
+The application is fully responsive, component-based, and deployed live using Vercel with CI/CD integration from GitHub.
+Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend: React JS, JavaScript, HTML, CSS
 
-### `npm run build`
+Version Control: Git, GitHub
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deployment: Vercel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tools: VS Code, npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔹 How I Created the Portfolio (Step-by-Step)
+1️⃣ Create React App
+npx create-react-app charishma-portfolio
+cd charishma-portfolio
 
-### `npm run eject`
+2️⃣ Start Local Development Server
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+App runs on:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3️⃣ Build Portfolio Sections
 
-## Learn More
+I created and updated:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+App.js → main portfolio layout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+styles.css → custom styling
 
-### Code Splitting
+public/profile.jpg → profile photo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+public/Charishma_Polineni_Resume.pdf → downloadable resume
 
-### Analyzing the Bundle Size
+4️⃣ Add Projects Dynamically
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Projects are stored as objects in App.js and rendered using .map() for clean, reusable components.
 
-### Making a Progressive Web App
+5️⃣ Git & GitHub Setup
+git init
+git add .
+git commit -m "Initial portfolio setup"
+git branch -M main
+git remote add origin https://github.com/CharishmaPoline/charishma-portfolio.git
+git push -u origin main
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+6️⃣ Update Resume / Links Later
 
-### Advanced Configuration
+Whenever I updated resume or links:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+git add public/Charishma_Polineni_Resume.pdf
+git add src/App.js
+git commit -m "Update resume and links"
+git push origin main
 
-### Deployment
+7️⃣ Deploy on Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Connected GitHub repo to Vercel
 
-### `npm run build` fails to minify
+Enabled automatic deployment on every push
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Vercel builds and deploys the latest version automatically
+
+Live URL:
+
+https://charishma-portfolio-7ha4.vercel.app/
+
+🔹 How to Run the Project Locally (Anytime)
+npm install
+npm start
+
+🔹 Final Outcome
+
+Professional, clean React portfolio
+
+Live deployed with Vercel
+
+Easy to update resume, links, and projects
+
+Suitable for AI/ML Engineer, Data Engineer, Data Analyst roles
+
